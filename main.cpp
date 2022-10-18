@@ -1,5 +1,5 @@
 #include "liczbaDniObliczenia.h"
-#include "interfejsUzytkownika.h"
+#include "interfejsUżytkownika.h"
 
 /*
 Program oblicza liczbę dni w miesiącu i liczbę dni w roku dla podanego miesiąca
@@ -9,11 +9,8 @@ wypiszLiczbeDniNaMiesiącRok(2, 2020).
 
 int main() {
     liczbaDniObliczenia liczbaDniObl;
-    interfejsUżytkownika::pobierzDane(liczbaDniObl.miesiąc, liczbaDniObl.rok);
+    interfejsUżytkownika::pobierzDane(liczbaDniObl);
     liczbaDniObl.wykonajObliczenia();
-    interfejsUżytkownika::wypiszLiczbeDniNaMiesiącRok(liczbaDniObl.miesiąc,
-                                                      liczbaDniObl.rok, 
-                                                      liczbaDniObl.liczbaDniWmies, 
-                                                      liczbaDniObl.liczbaDniWroku);
+    interfejsUżytkownika::wypiszLiczbeDniNaMiesiącRok(liczbaDniObl);
     main();
 }

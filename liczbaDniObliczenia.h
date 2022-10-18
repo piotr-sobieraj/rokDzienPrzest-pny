@@ -1,3 +1,5 @@
+#pragma once
+
 class liczbaDniObliczenia {
     public: 
         int miesiąc;
@@ -41,8 +43,10 @@ void liczbaDniObliczenia::ustawLiczbęDniWMiesiącu(void) {
         case 10:
         case 12:
             this -> liczbaDniWmies =  31;
+            break;
         case 2:
             this -> liczbaDniWmies = czyRokPrzestępny ? 29 : 28;
+            break;
         default:
             this -> liczbaDniWmies = 30;
     }  
